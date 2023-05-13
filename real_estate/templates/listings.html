@@ -1,5 +1,5 @@
 {% for listing in listings %}
 
-<p>{{ listing.title }}</p>
+<p><a href="{% url 'listing' listing.id %}">{{ listing.title }}</a> - <a href="{% url 'update' listing.id %}">Редактировать</a><a href="{% url 'delete' listing.id %}">Удалить</a></p>
 
 {% endfor %}

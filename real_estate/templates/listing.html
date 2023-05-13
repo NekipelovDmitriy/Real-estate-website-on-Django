@@ -1,0 +1,7 @@
+<a href="{% url 'update' listing.id %}">Редактировать</a><a href="{% url 'delete' listing.id %}">Удалить</a>
+
+<h1>{{ listing.title}}</h1>
+
+<p>${{ listing.price }}</p>
+
+<p>{{ listing.address }}</p>
